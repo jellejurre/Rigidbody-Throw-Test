@@ -80,7 +80,7 @@ jobs:
 
       - name: Create Packages
         id: create_packages
-        uses: VRLabs/VRCTools-Packaging-Action@v1
+        uses: VRLabs/VRCTools-Packaging-Action@feature/custom-json-fields
         with:
           path: './Checkout/${{ inputs.ASSETS_PATH }}'
           outputPath: '${{ env.RELEASE_PATH }}'
