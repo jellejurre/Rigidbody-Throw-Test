@@ -87,7 +87,7 @@ jobs:
           releaseUrl: 'https://github.com/${{ inputs.repository }}/releases/download/${{ steps.job_data.outputs.version }}/${{ steps.job_data.outputs.package_name }}-${{ steps.job_data.outputs.version }}.zip'
           unityReleaseUrl: 'https://github.com/${{ inputs.repository }}/releases/download/${{ steps.job_data.outputs.version }}/${{ steps.job_data.outputs.package_name }}-${{ steps.job_data.outputs.version }}.unitypackage'
           releaseVersion: '${{ steps.job_data.outputs.version }}'
-          customJsonFields: "changelogUrl=https://github.com/VRLabs/${{ inputs.REPOSITORY }}/releases/tag/${{ inputs.TAG }}"
+          customJsonFields: "changelogUrl=https://github.com/${{ inputs.REPOSITORY }}/releases/tag/${{ inputs.TAG }}"
 
       - name: Create tag
         run: |
