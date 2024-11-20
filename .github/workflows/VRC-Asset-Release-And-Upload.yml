@@ -80,7 +80,7 @@ jobs:
 
       - name: Create Packages
         id: create_packages
-        uses: VRLabs/VRCTools-Packaging-Action@4a8d63dc51d1e29e129cd18ee5747fdabd4bf2ab
+        uses: jellejurre/VRCTools-Packaging-Action@0
         with:
           path: './Checkout/${{ inputs.ASSETS_PATH }}'
           outputPath: '${{ env.RELEASE_PATH }}'
